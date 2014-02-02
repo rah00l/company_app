@@ -14,10 +14,8 @@
 ActiveRecord::Schema.define(:version => 20140129193147) do
 
   create_table "companies", :force => true do |t|
-    t.string   "title"
-    t.string   "website"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string "title"
+    t.string "website"
   end
 
   create_table "departments", :force => true do |t|
@@ -27,12 +25,11 @@ ActiveRecord::Schema.define(:version => 20140129193147) do
   end
 
   create_table "employees", :force => true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "email_id"
-    t.integer  "age"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string  "first_name"
+    t.string  "last_name"
+    t.string  "email_id"
+    t.integer "age"
+    t.integer "deparment_id"
   end
 
 end

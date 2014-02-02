@@ -5,8 +5,8 @@ class CreateEmployees < ActiveRecord::Migration
       t.string :last_name
       t.string :email_id
       t.integer :age
-
-      t.timestamps
+      t.integer :deparment_id
+#      t.timestamps
     end
   end
 end

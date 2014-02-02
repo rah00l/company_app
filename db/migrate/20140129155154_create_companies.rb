@@ -3,7 +3,6 @@ class CreateCompanies < ActiveRecord::Migration
     create_table :companies do |t|
       t.string :title
       t.string :website
-
 #      t.timestamps
     end
   end
